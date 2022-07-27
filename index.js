@@ -24,6 +24,8 @@ const start = () => {
         //console.log(msg.chat.id, msg.text)
         bot.sendMessage('526477482',  `Написав: ${msg.chat.first_name} \n${msg.text}`)
        // return bot.sendMessage(chatId, 'Вибач, я тебе не зрозумів. Спробуй ще раз!')
+        let url = `https://api.telegram.org/bot${token}/getFile?file_id=${msg.photo.file_id}`;
+       console.log(msg.photo.file_id)
         
     })
 }
